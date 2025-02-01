@@ -4,7 +4,7 @@ import { useState } from 'react';
 //import '../styles/App.css';
 import TaskInput from '../components/TaskInput';
 import { useTasks } from '../hooks/TrackTasks';
-import '../styles/TaskList.css'; // Import styles
+import '../styles/TaskList.css';
 
 function App() {
   const { tasks, addTask, removeTask, toggleTaskCompletion } = useTasks();
@@ -23,7 +23,7 @@ function App() {
               type="radio"
               className="radio-button"
               checked={task.completed}
-              onChange={() => toggleTaskCompletion(index)} /* Fix here */
+              onChange={() => toggleTaskCompletion(index)}
             />
             <button onClick={() => removeTask(index)} className="delete-button">
               X

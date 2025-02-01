@@ -10,14 +10,12 @@ body {
   background-color: #f5f5f5;
 }
 
-/* Title Styling */
 h1 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 20px;
 }
 
-/* Input Field */
 .task-input {
   border: 2px solid blue;
   border-radius: 5px;
@@ -30,7 +28,6 @@ h1 {
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Task List */
 .task-list {
   list-style: none;
   padding: 0;
@@ -38,7 +35,6 @@ h1 {
   margin-top: 20px;
 }
 
-/* Task Items */
 .task-item {
   display: flex;
   align-items: center;
@@ -53,19 +49,17 @@ h1 {
   transition: 0.2s ease-in-out;
 }
 
-/* Completed Task - Strikethrough */
 .completed-task {
   text-decoration: line-through;
   color: gray;
 }
 
-/* Styled Radio Button - Keeps Circular Shape */
 .radio-button {
-  appearance: none; /* Removes default radio styling */
+  appearance: none;
   width: 20px;
   height: 20px;
-  border: 2px solid gray; /* Default gray border */
-  border-radius: 50%; /* Ensures perfect circle */
+  border: 2px solid gray;
+  border-radius: 50%;
   cursor: pointer;
   margin-left: auto;
   margin-right: 2px;
@@ -75,27 +69,24 @@ h1 {
   justify-content: center;
 }
 
-/* When Checked, Fill with Blue and Add White Dot */
 .radio-button:checked {
-  background-color: blue; /* Blue fill when selected */
-  border-color: blue; /* Border changes to blue */
+  background-color: blue;
+  border-color: blue;
   position: relative;
 }
 
-/* Inner White Dot When Selected */
 .radio-button:checked::after {
   content: '';
-  width: 10px; /* Inner dot size */
+  width: 10px;
   height: 10px;
-  background: white; /* White dot */
-  border-radius: 50%; /* Keeps it circular */
+  background: blue;
+  border-radius: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-/* Delete Button */
 .delete-button {
   background: none;
   border: none;

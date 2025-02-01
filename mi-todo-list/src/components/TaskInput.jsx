@@ -3,10 +3,10 @@ import { useState } from 'react';
 function TaskInput({ addTask }) {
   const [input, setInput] = useState('');
 
-  const handleKeyDown = (e) => {
-    if (e.key === 'Enter' && input.trim() !== '') {
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter' && input.trim() !== '') {
       addTask(input);
-      setInput(''); // Clear input box
+      setInput('');
     }
   };
 
