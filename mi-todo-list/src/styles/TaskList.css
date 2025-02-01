@@ -1,0 +1,110 @@
+/* Center the entire page */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Title Styling */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Input Field */
+.task-input {
+  border: 2px solid blue;
+  border-radius: 5px;
+  padding: 10px;
+  height: 50px;
+  width: 300px;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Task List */
+.task-list {
+  list-style: none;
+  padding: 0;
+  width: 320px;
+  margin-top: 20px;
+}
+
+/* Task Items */
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  width: 320px;
+  transition: 0.2s ease-in-out;
+}
+
+/* Completed Task - Strikethrough */
+.completed-task {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Styled Radio Button - Keeps Circular Shape */
+.radio-button {
+  appearance: none; /* Removes default radio styling */
+  width: 20px;
+  height: 20px;
+  border: 2px solid gray; /* Default gray border */
+  border-radius: 50%; /* Ensures perfect circle */
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 2px;
+  transition: background 0.2s ease, border-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* When Checked, Fill with Blue and Add White Dot */
+.radio-button:checked {
+  background-color: blue; /* Blue fill when selected */
+  border-color: blue; /* Border changes to blue */
+  position: relative;
+}
+
+/* Inner White Dot When Selected */
+.radio-button:checked::after {
+  content: '';
+  width: 10px; /* Inner dot size */
+  height: 10px;
+  background: white; /* White dot */
+  border-radius: 50%; /* Keeps it circular */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Delete Button */
+.delete-button {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.delete-button:hover {
+  color: black;
+}
